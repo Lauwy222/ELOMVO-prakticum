@@ -1,0 +1,54 @@
+\section{Metingen Boost Converter}
+\subsection{Open loop verkenning}
+\subsubsection{Uitgangsspanning\&stroom}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Duty Cycle (\%)} & \textbf{Load Resistance (ohm)} & \textbf{Output Voltage (V)} & \textbf{Output Current (A)} \\ \hline
+10 & 500 & 22.8 & 0.045 \\ \hline
+20 & 500 & 29.3 & 0.058 \\ \hline
+30 & 500 & 31.7 & 0.063 \\ \hline
+40 & 500 & 33.6 & 0.067 \\ \hline
+50 & 500 & 40.0 & 0.080 \\ \hline
+60 & 500 & 49.4 & 0.098 \\ \hline
+70 & 500 & 62.3 & 0.124 \\ \hline
+80 & 500 & 59.0 & 0.115 \\ \hline
+90 & 500 & 22.7 & 0.044 \\ \hline
+\end{tabular}
+\caption{Output voltage and current at different duty cycles with a load resistance of 500 ohm}
+\label{tab:duty_cycle_output}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Duty Cycle (\%)} & \textbf{Load Resistance (ohm)} & \textbf{Output Voltage (V)} & \textbf{Output Current (A)} \\ \hline
+10 & 50 & 21.2 & 0.419 \\ \hline
+20 & 50 & 23.6 & 0.468 \\ \hline
+30 & 50 & 26.6 & 0.526 \\ \hline
+40 & 50 & 30.0 & 0.592 \\ \hline
+50 & 50 & 27.0 & 0.534 \\ \hline
+60 & 50 & 19.9 & 0.397 \\ \hline
+70 & 50 & 13.6 & 0.270 \\ \hline
+80 & 50 & 8.0 & 0.160 \\ \hline
+90 & 50 & 3.2 & 0.063 \\ \hline
+\end{tabular}
+\caption{Output voltage and current at different duty cycles with a load resistance of 50 ohm}
+\label{tab:duty_cycle_output_50ohm}
+\end{table}
+\subsubsection{Onbelaste meting}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Duty Cycle (\%)} & \textbf{Load Resistance (ohm)} & \textbf{Output Voltage (V)} & \textbf{Time (ms)} & \textbf{Scope Figure} \\ \hline
+50 & 500 & 40.0 & 20 & A \\ \hline
+50 & 50 & 26.9 & 55 & B \\ \hline
+1 & 0 & - & - & C \\ \hline
+\end{tabular}
+\caption{Output voltage, time, and scope figure at various duty cycles and load resistances}
+\label{tab:duty_cycle_scope}
+\end{table}
+

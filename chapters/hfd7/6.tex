@@ -1,0 +1,34 @@
+\subsection{Nullast/Kortsluitproef}
+\begin{enumerate}
+    \item Stel de functiegenerator in op een sinusspanning van 5 volt piek-piek, \( f = 100 \, \text{kHz} \).
+    \item Sluit de functiegenerator aan op de serieschakeling van de spoel en weerstand.
+    \item Let op dat je de aarde van de functiegenerator en scope aan dezelfde klem aansluit.
+    \item Laat de secundaire wikkeling open.
+    \item Meet met de scope de spanning over de weerstand van \(10 \, \Omega\) en bereken hieruit de stroom (piek-piek).
+    
+    \begin{enumerate}
+        \item Meetwaarde: \( U_{R,\text{pp}} = 10 \, \text{mV} \)
+        \item Bereken de no-load stroom:
+        \[
+        I_{\text{No Load}} = \frac{U_{R,\text{pp}}}{R} = \frac{10 \, \text{mV}}{10 \, \Omega} = 1 \, \text{mA}
+        \]
+    \end{enumerate}
+
+    \item Sluit nu een weerstand van \(1000 \, \Omega\) aan op de secundaire wikkeling.
+    \item Meet met de scope de spanning over de weerstand van \(10 \, \Omega\) en bereken hieruit de stroom (piek-piek).
+    
+    \begin{enumerate}
+        \item Meetwaarde: \( U_{R,\text{pp}} = 832 \, \text{mV} \)
+        \item Bereken de stroom bij \(1 \, \text{k} \Omega\):
+        \[
+        I_{1k} = \frac{U_{R,\text{pp}}}{R} = \frac{832 \, \text{mV}}{10 \, \Omega} = 83.2 \, \text{mA}
+        \]
+    \end{enumerate}
+
+    \item Verklaar het verschil tussen \( I_{\text{No Load}} \) en \( I_{1k} \): Bij no-load kan de stroom niet door de secundaire wikkeling stromen omdat er geen gesloten stroomkring is. Bij \(1 \, \text{k} \Omega\) kan de stroom wel vloeien, omdat de secundaire kring gesloten is.
+
+    \item Sluit de secundaire wikkeling nu kort (verbind beide draadjes).
+    \item Meet met de scope de spanning over de weerstand van \(10 \, \Omega\) en bereken hieruit de stroom (piek-piek).
+    \item Gemeten stroom \( I_{\text{Short-Circuit}} = [ ] \, \text{V} \).
+    \item Verklaar het verschil tussen \( I_{\text{No Load}} \) en \( I_{\text{Short-Circuit}} \).
+\end{enumerate}
