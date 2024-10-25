@@ -1,0 +1,44 @@
+\subsection{Output capacitor ESR reduction}
+In deze simulatie onderzoeken we de vermindering van de output voltage ripple door twee output condensatoren parallel te schakelen. De parameters van de simulatie zijn als volgt:
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Component} & \textbf{Value} \\
+\hline
+Vin  & 48 volt \\
+L    & 100 $\mu$H \\
+C(2*) & 10 $\mu$F \\
+Resr & 1 $\Omega$ \\
+Rout & 10 \\
+Fs   & 50 kHz \\
+d    & 40\% \\
+\hline
+\end{tabular}
+\caption{Componentwaarden voor simulatie van de output voltage ripple met parallelle condensatoren}
+\label{fig:Componentwaarden_parallel_condensatoren}
+\end{table}
+
+De resultaten van de simulatie zijn als volgt weergegeven in \autoref{fig:Capacitor_output_ripple_parallel}.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Capacitor} & \textbf{Output voltage ripple} & \textbf{MIN} & \textbf{MAX} \\
+\hline
+2*10u   & 0,472  & 18,73  & 19,202 \\
+1*22u   & 0,422  & 18,796 & 19,218 \\
+\hline
+\end{tabular}
+\caption{Meting van de output voltage ripple bij parallelle condensatoren}
+\label{fig:Capacitor_output_ripple_parallel}
+\end{table}
+
+\subsubsection{Conclusie}
+De vermindering van de output voltage ripple bij parallelle condensatoren kan als volgt worden verklaard:
+
+\textbf{Grotere totale capaciteit}: Bij parallelle schakeling worden de capaciteiten opgeteld, wat zorgt voor een grotere capaciteit. Dit verbetert de filtering en vermindert de spanningsrimpel.
+
+\textbf{Lagere effectieve serieweerstand (ESR)}: Parallelle condensatoren delen de stroom, waardoor de totale ESR afneemt. Een lagere ESR betekent minder verliezen en dus minder rimpel.
+
+\textbf{Betere spanningsafvlakking}: Door de toename in capaciteit en lagere ESR kunnen de condensatoren beter reageren op veranderingen, waardoor de rimpel in de uitgangsspanning verder afneemt.

@@ -1,0 +1,58 @@
+\subsection{Output capacitor ESR}
+In deze opdracht onderzoeken we de afhankelijkheid van de "output voltage ripple" van de equivalente seriesweerstand (Resr) van de condensator. We meten de piek-piek output voltage ripple bij verschillende Resr-waarden. De parameters voor de simulatie zijn als volgt:
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Component} & \textbf{Value} \\
+\hline
+Vin  & 48 volt \\
+L    & 100 $\mu$H \\
+C    & 10 $\mu$F \\
+Resr & 100 m$\Omega$ \\
+Rout & 10 \\
+Fs   & 50 kHz \\
+d    & 40\% \\
+\hline
+\end{tabular}
+\caption{Componentwaarden voor simulatie van de output voltage ripple}
+\label{fig:Componentwaarden voor simulatie2.4}
+\end{table}
+
+De resultaten van de simulatie, waarin de Resr-waarde varieert, zijn te zien in \autoref{fig:Resr_Output_Voltage_Ripple_Waarden}.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Resr} & \textbf{Output voltage ripple} & \textbf{MIN} & \textbf{MAX} \\
+\hline
+0,001  & 0,621  & 18,663  & 19,284 \\
+0,01   & 0,583  & 18,713  & 19,296 \\
+0,1    & 0,568  & 18,667  & 19,235 \\
+0,2    & 0,578  & 18,703  & 19,281 \\
+0,5    & 0,61   & 18,683  & 19,293 \\
+1      & 0,562  & 18,667  & 19,229 \\
+\hline
+\end{tabular}
+\caption{Output Voltage Ripple afhankelijk van Resr}
+\label{fig:Resr_Output_Voltage_Ripple_Waarden}
+\end{table}
+
+Vervolgens verhogen we de frequentie van 50 kHz naar 100 kHz. De resultaten van deze simulatie zijn weergegeven in \autoref{fig:Resr_Output_Voltage_Ripple_Waarden_100kHz}.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Resr} & \textbf{Output voltage ripple} & \textbf{MIN} & \textbf{MAX} \\
+\hline
+0,001  & 0,621  & 18,663  & 19,284 \\
+0,01   & 0,583  & 18,713  & 19,296 \\
+0,1    & 0,568  & 18,667  & 19,235 \\
+0,2    & 0,578  & 18,703  & 19,281 \\
+0,5    & 0,61   & 18,683  & 19,293 \\
+1      & 0,562  & 18,667  & 19,229 \\
+\hline
+\end{tabular}
+\caption{Output Voltage Ripple afhankelijk van Resr bij 100 kHz}
+\label{fig:Resr_Output_Voltage_Ripple_Waarden_100kHz}
+\end{table}

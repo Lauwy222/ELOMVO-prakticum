@@ -1,0 +1,55 @@
+\subsection{Output voltage ripple}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Component} & \textbf{Value} \\
+\hline
+Vin  & 48 volt \\
+L    & 100 $\mu$H \\
+C    & 10 $\mu$F \\
+Rout & 10 \\
+Fs   & 50 kHz \\
+d    & 40\% \\
+\hline
+\end{tabular}
+\caption{Parameters for Output Voltage Ripple Simulation}
+\label{fig:Output_voltage_ripple_simulation}
+\end{table}
+Als we deze gegevens invullen in de simulatie krijgen we de volgende resultaten te zien in \autoref{fig:Capacitor_voltage_ripple_waarden}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Capacitor} & \textbf{Voltage ripple} & \textbf{MIN} & \textbf{MAX} \\
+\hline
+10u   & 0,392 & 18,852 & 19,244 \\
+22u   & 0,261 & 18,859 & 19,12  \\
+47u   & 0,409 & 18,793 & 19,202 \\
+100u  & 0,6   & 18,638 & 19,238 \\
+220u  & 0,697 & 18,67  & 19,367 \\
+470u  & 0,464 & 18,783 & 19,247 \\
+\hline
+\end{tabular}
+\caption{Capacitor Voltage Ripple Waarden}
+\label{fig:Capacitor_voltage_ripple_waarden}
+\end{table}
+
+Dit herhalen we vervolgens, maar we veranderen de frequentie van 50 kHz naar 100 kHz. De resultaten zijn te zien in \autoref{fig:Capacitor_voltage_ripple_waarden_100kHz}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Capacitor} & \textbf{Voltage ripple} & \textbf{MIN} & \textbf{MAX} \\
+\hline
+10u   & 0,087 & 18,962 & 19,049 \\
+22u   & 0,012 & 18,995 & 19,007 \\
+47u   & 0,269 & 18,88  & 19,149 \\
+100u  & 0,299 & 18,858 & 19,157 \\
+220u  & 1,018 & 18,434 & 19,452 \\
+470u  & 0,699 & 18,609 & 19,308 \\
+\hline
+\end{tabular}
+\caption{Capacitor Voltage Ripple Waarden bij 100 kHz}
+\label{fig:Capacitor_voltage_ripple_waarden_100kHz}
+\end{table}

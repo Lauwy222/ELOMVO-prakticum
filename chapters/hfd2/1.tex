@@ -1,0 +1,60 @@
+\section{Online Simulatie Buck}
+\subsection{Buck converter}
+Er zijn een aantal componentwaarden gegeven die we hebben ingevoerd in het simulatiecircuit. Deze waarden zijn weergegeven in \autoref{fig:Gegeven Componentwaarden}.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Component} & \textbf{Value} \\
+\hline
+Vin & 48 volt \\
+L   & 220 $\mu$H \\
+C   & 10 $\mu$F \\
+Rout & 10 \\
+Fs  & 50 kHz \\
+d   & 25\% \\
+\hline
+\end{tabular}
+\caption{Gegeven Componentwaarden}\label{fig:Gegeven Componentwaarden}
+\end{table}
+In de opdracht wordt aangegeven dat we deze componentwaarden moeten gebruiken om met verschillende waarden voor de duty cycle (D) te simuleren. De resultaten van deze simulaties zijn weergegeven in \autoref{fig:Overzicht van meetwaarden variabele duty cycle}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{D} & \textbf{Vin} & \textbf{Iin} & \textbf{Vout} & \textbf{Iout} & \textbf{Pin} & \textbf{Pout} & \textbf{n} \\
+\hline
+10 & 48 & 0,559144 & 4,72 & 0,47204 & 26,838912 & 2,2280288 & 8,30\% \\
+20 & 48 & 1,163 & 9,482 & 0,948209 & 55,824 & 8,990917738 & 16,11\% \\
+30 & 48 & 1,807 & 14,191 & 1,419 & 86,736 & 20,137029 & 23,22\% \\
+40 & 48 & 2,272 & 19,037 & 1,904 & 109,056 & 36,246448 & 33,24\% \\
+50 & 48 & 2,365 & 23,625 & 2,362 & 113,52 & 55,80225 & 49,16\% \\
+60 & 48 & 3,202 & 28,474 & 2,847 & 153,696 & 81,065478 & 52,74\% \\
+70 & 48 & 3,355 & 33,314 & 3,331 & 161,04 & 110,968934 & 68,91\% \\
+80 & 48 & 4,117 & 38,087 & 3,809 & 197,616 & 145,073383 & 73,41\% \\
+90 & 48 & 4,463 & 43,001 & 4,3 & 214,224 & 184,9043 & 86,31\% \\
+\hline
+\end{tabular}
+\caption{Overzicht van meetwaarden variabele duty cycle}\label{fig:Overzicht van meetwaarden variabele duty cycle}
+\end{table}
+Daarna wordt ons gevraagd om de waarden van Rout aan te passen. De resultaten voor de efficiëntie ($\eta$) bij verschillende waarden van Rout zijn weergegeven in \autoref{fig:Overzicht van meetwaarden bij verschillende Rout waarden}.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{Rout} & \textbf{Vin} & \textbf{Iin} & \textbf{Vout} & \textbf{Iout} & \textbf{Pin} & \textbf{Pout} & \textbf{n} \\
+\hline
+2  & 48 & 6,011   & 11,8  & 5,9     & 288,528  & 69,62     & 24,13\% \\
+4  & 48 & 3,245   & 11,817 & 2,954   & 155,76   & 34,907418 & 22,41\% \\
+6  & 48 & 2,119   & 11,873 & 1,979   & 101,712  & 23,496667 & 23,10\% \\
+8  & 48 & 1,632   & 11,901 & 1,488   & 78,336   & 17,708688 & 22,61\% \\
+10 & 48 & 1,483   & 11,864 & 1,186   & 71,184   & 14,070704 & 19,77\% \\
+12 & 48 & 1,286   & 11,866 & 0,999827 & 61,728   & 11,86394718 & 19,22\% \\
+14 & 48 & 1,145   & 11,87  & 0,847829 & 54,96    & 10,06373023 & 18,31\% \\
+16 & 48 & 1,039   & 11,875 & 0,742163 & 49,872   & 8,813185625 & 17,67\% \\
+18 & 48 & 0,955579 & 11,875 & 0,659737 & 45,867792 & 7,834376875 & 17,08\% \\
+20 & 48 & 0,74917  & 11,934 & 0,596704 & 35,96016  & 7,121065536 & 19,80\% \\
+\hline
+\end{tabular}
+\caption{Overzicht van meetwaarden bij verschillende Rout waarden}\label{fig:Overzicht van meetwaarden bij verschillende Rout waarden}
+\end{table}

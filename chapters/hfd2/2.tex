@@ -1,0 +1,53 @@
+\subsection{Inductor current ripple}
+Voor de volgende opdracht krijgen wij een aantal waardes(\autoref{fig:Componentwaarden voor simulatie2.1}) gegeven, waarna we de waarde van de spoel zullen variëren om de effecten te observeren.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Component} & \textbf{Value} \\
+\hline
+Vin  & 48 volt \\
+L    & 100 $\mu$H \\
+C    & 10 $\mu$F \\
+Rout & 10 \\
+Fs   & 50 kHz \\
+d    & 40\% \\
+\hline
+\end{tabular}
+\caption{Componentwaarden voor simulatie}
+\label{fig:Componentwaarden voor simulatie2.1}
+\end{table}
+De simulatie resulteert in de volgende waarden, zoals te zien in \autoref{fig:Inductor Current Ripple Waarden}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Inductor} & \textbf{Current ripple} & \textbf{MIN} & \textbf{MAX} \\
+\hline
+47u  & 2,948  & 0     & 2,948 \\
+100u & 1,48   & 0,561 & 2,041 \\
+150u & 1,577  & 0,056 & 1,633 \\
+220u & 0,871  & 0,7   & 1,571 \\
+470u & 0,313  & 1,053 & 1,366 \\
+\hline
+\end{tabular}
+\caption{Inductor Current Ripple Waarden}
+\label{fig:Inductor Current Ripple Waarden}
+\end{table}
+Dit herhalen we vervolgens, maar we veranderen de frequentie van 50 kHz naar 100 kHz. De resultaten zijn te zien in \autoref{fig:Inductor Current Ripple Waarden2}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Inductor} & \textbf{Current ripple} & \textbf{MIN} & \textbf{MAX} \\
+\hline
+47u  & 0,893067  & 0,716933  & 1,61 \\
+100u & 0,892986  & 0,717014  & 1,61 \\
+150u & 0,597264  & 0,869736  & 1,467 \\
+220u & 0,28694   & 0,97206   & 1,259 \\
+470u & 0,189     & 1,085     & 1,274 \\
+\hline
+\end{tabular}
+\caption{Inductor Current Ripple Waarden}
+\label{fig:Inductor Current Ripple Waarden2}
+\end{table}
