@@ -1,1 +1,57 @@
 \subsection{Reference voltage}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Supply Voltage \(V_{supply}\)} & \textbf{Reference Voltage \(V_{ref}\)} \\ \hline
+0 & 0 \\ \hline
+5 & 0 \\ \hline
+10 & 0 \\ \hline
+15 & 0 \\ \hline
+16 & 5 \\ \hline
+17 & 5 \\ \hline
+18 & 5 \\ \hline
+19 & 5 \\ \hline
+20 & 5 \\ \hline
+\end{tabular}
+\caption{\(V_{ref}\) als functie van \(V_{supply}\) voor toenemende voedings spanning}
+\label{tab:toenemende_spanning_uc3842}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Supply Voltage \(V_{supply}\)} & \textbf{Reference Voltage \(V_{ref}\)} \\ \hline
+20 & 5 \\ \hline
+19 & 5 \\ \hline
+18 & 5 \\ \hline
+17 & 5 \\ \hline
+16 & 5 \\ \hline
+15 & 5 \\ \hline
+14 & 5 \\ \hline
+13 & 5 \\ \hline
+12 & 5 \\ \hline
+10 & 0 \\ \hline
+5 & 0 \\ \hline
+0 & 0 \\ \hline
+\end{tabular}
+\caption{\(V_{ref}\) als functie van \(V_{supply}\) voor afnemende voedings spanning}
+\label{tab:afnemende_spanning_uc3842}
+\end{table}
+
+Bij het opvoeren van de spanning \(V_{supply}\) bij 16V wordt de spanning van \(V_{ref}\) 5V. En bij het afnemen van \(V_{supply}\) met een waarde van minder dan 10V, valt de spanning van \(V_{ref}\) van 5V naar 0V.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Parameter} & \textbf{Waarde (V)} \\ \hline
+\(V_{ref}\) & 5 \\ \hline
+\(V_{Supply}^{afnemend}\) & 10 \\ \hline
+\(V_{Supply}^{toenemend}\) & 16 \\ \hline
+\end{tabular}
+\caption{Gemeten spanningen bij alleen NPN-transistor}
+\label{tab:npn_waarden}
+\end{table}

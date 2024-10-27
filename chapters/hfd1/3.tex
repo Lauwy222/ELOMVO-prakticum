@@ -1,2 +1,23 @@
 \subsection{CASPOC Simulaties Buck-converter}
 \subsubsection{Verschillende duty cycles}
+\textcolor{gray}{Vul onderstaande tabel in door de theoretische waarde van Vout te berekenen en de andere waarden af te
+lezen uit de grafieken. De peak waarden zijn de allerhoogste waarden die voorkomen. Ook
+worden de tijdstippen gevraagd waarop de peak plaats vindt. De 5\% settling tijd van een
+signaal die als stationaire waarde 100 heeft is de tijd die nodig is om het signaal tussen de
+95 en 105 te laten komen. Het signaal moet ook tussen deze waarden blijven.
+}
+\begin{table}[h!]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{d} & \textbf{Uitgangsspanning} & \textbf{Pieksapnning} & \textbf{Tijd piekspanning (s)} & \textbf{Stationaire spanning} & \textbf{Piekstroom} & \textbf{Tijd piekstroom (s)} & \textbf{Stationaire stroom} & \textbf{Settling tijd (s)} \\ \hline
+10\% & 2 & 2,516 & 326\(\mu\) & 1,646 & 1,565 & 161\(\mu\) & 0,351 & 1,740m \\ \hline
+25\% & 5 & 8,237 & 308\(\mu\) & 4,478 & 4,927 & 144\(\mu\) & 0,804 & 1,456m \\ \hline
+50\% & 10 & 17,574 & 311\(\mu\) & 9,721 & 10,188 & 149\(\mu\) & 1,576 & 1,021m \\ \hline
+75\% & 15 & 27,072 & 313\(\mu\) & 15,053 & 15,308 & 154\(\mu\) & 1,627 & 0,865m \\ \hline
+90\% & 18 & 32,744 & 314\(\mu\) & 18,157 & 18,231 & 157\(\mu\) & 1,906 & 0,797m \\ \hline
+\end{tabular}%
+}
+\caption{Nummerieke analyse buck converter 1}
+\end{table}

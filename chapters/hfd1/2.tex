@@ -5,8 +5,9 @@
     \caption{Schema voor de simulatie van een boostconverter}
     \label{fig:Schema voor de simulatie van een boostconverter}
 \end{figure}
-\begin{table}[h!]
+\begin{table}[ht]
 \centering
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{|l|c|c|c|}
 \hline
 \textbf{Duty Cycle (\%)} & \textbf{Vuit (V) Rl=1MEG (onbelast)} & \textbf{Vuit (V) Rl=560 Ohm} & \textbf{Vuit (V) Rl=56 Ohm} \\ \hline
@@ -15,13 +16,14 @@
 40 & 65.02 & 64.34 & 62.91 \\ \hline
 50 & 77.95 & 77.23 & 75.25 \\ \hline
 75 & 139.54 & 138.83 & 132.72 \\ \hline
-\end{tabular}
+\end{tabular}%
+}
 \caption{Uitgangsspanningen Vuit bij verschillende belasting en duty cycles}
 \end{table}
 Uit de simulaties blijkt dat de uitgangsspanning toeneemt met een hogere duty cycle, zoals verwacht bij een boostconverter. De belasting beïnvloedt de spanning: bij zwaardere belasting daalt de uitgangsspanning licht. De resultaten komen goed overeen met de theorie en tonen de correcte werking van de schakeling. De wet van Kirchhoff en \(UL = L \cdot \frac{dI}{dt}\) zijn duidelijk waarneembaar in de stroom- en spanningsgolfvormen.
 
 \subsubsection{10\% dutycycle, 1 MEG ohm load}
-\begin{figure}[h!]
+\begin{figure}[ht]
     \centering
     \begin{subfigure}[b]{0.3\linewidth}
         \centering
@@ -111,4 +113,4 @@ Uit de simulaties blijkt dat de uitgangsspanning toeneemt met een hogere duty cy
     \label{fig:componenten75}
 \end{figure}
 
-[HIER MOET NOG UITLEG KOMEN]
+De simulaties lieten zien dat de boostconverter zich gedraagt zoals verwacht. Het was duidelijk dat de uitgangsspanning stijgt als de duty cycle toeneemt, wat aantoont dat de converter goed werkt. De stroomwet van Kirchhoff is duidelijk te zien met de relatie tussen V en I. Kijkend naar de simulatie wordt ook \(U_L = L * \frac{dI}{dT}\) duidelijk. In de grafieken is ook de theorie van de lessen terug te zien. Zo is het effect van de duty cycle en de samenhang hiervan met de verschillende stromen goed terug te zien in de diode-, mosfet- en spoelstromen.
